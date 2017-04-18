@@ -24,7 +24,10 @@ gulp.task('sass', () => {
     // sourcemap: tell the browser where does the code from originally
     .pipe(sourcemaps.init())
     // Compile Sass to CSS
-    .pipe(sass().on('error', sass.logError))
+    // Implementing Susy for the grid system
+    .pipe(sass({
+      includePaths: ['node_modules/susy/sass']
+    }).on('error', sass.logError))
     // autoprefixer
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))

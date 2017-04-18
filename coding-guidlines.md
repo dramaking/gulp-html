@@ -1,4 +1,7 @@
 # SCSS Coding Guidelines
+
+In addition to [Sass Guidelines](https://sass-guidelin.es/)
+
 ## Naming Conventions
 
 ### JavaScript
@@ -118,13 +121,8 @@ iconhome.png
 ## IDs vs. Classes
 You should almost never need to use IDs. Broken behavior due to ID collisions are hard to track down and annoying.
 
-## Color Units
-When implementing feature styles, you should only be using color variables provided by colors.scss
-
 ## z-index Scale
 Please use the z-index scale defined by z-index.scss. $zIndex-1 to $zIndex-10 are provided.
-
-## Font Weight
 
 ## Componentizing
 Always look to abstract components. Using consistent style and the reuse of components across designs helps to improve this consistency at an implementation level.

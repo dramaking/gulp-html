@@ -54,11 +54,35 @@ $max-width: 1180px !default;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+  'small': (min-width: 320px),
+  'medium': (min-width: 768px),
+  'large': (min-width: 1024px),
 ) !default;
 
+
+
+
+
+/// z-index
+
+// Z-Index Scale (private vars)
+// --------------------------------------------------
+$zIndex-1:   100;
+$zIndex-2:   200;
+$zIndex-3:   300;
+$zIndex-4:   400;
+$zIndex-5:   500;
+$zIndex-6:   600;
+$zIndex-7:   700;
+$zIndex-8:   800;
+$zIndex-9:   900;
+$zIndex-10: 1000;
+
+// Z-Index Applications
+// --------------------------------------------------
+$zIndex-1--screenForeground:        $zIndex-1;
+$zIndex-1--followUpVisibility:      $zIndex-1;
+$zIndex-1--prlWelcome:              $zIndex-1;
 
 
 
